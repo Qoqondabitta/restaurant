@@ -1,0 +1,47 @@
+.logo-title {
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: linear-gradient(to right, cyan, blue);
+  background-clip: text;
+}
+
+.nav-btn{
+    height: 35px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 20px;
+    transition: all 0.1s linear;
+}
+
+.nav-btn:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+.nav-text{
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .nav-text{
+    display: none;
+  }
+
+  .btn-width{
+    width: fit-content;
+  }
+}
