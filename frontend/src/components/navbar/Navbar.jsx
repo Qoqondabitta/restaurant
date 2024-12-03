@@ -12,15 +12,19 @@ const Navbar = () => {
         </Link>
         <div className="center gap-20">
           <div className="column-center btn-width w-80 gap-10">
-            <button className="center p-5-10 button-common-style nav-btn">
-              +
-            </button>
+            <Link to="/create" style={{ textDecoration: "none" }}>
+              <button className="center p-5-10 button-common-style nav-btn">
+                +
+              </button>
+            </Link>
             <p className="nav-text">Create New Product</p>
           </div>
           <div className="column-center btn-width w-80 gap-10">
-            <button className="center p-5-10 button-common-style nav-btn">
-              <FaPhoneAlt size="0.75rem" />
-            </button>
+            <a style={{textDecoration: "none"}} target="_blank" href="https://github.com/Qoqondabitta?tab=overview&from=2023-04-01&to=2023-04-13">
+              <button className="center p-5-10 button-common-style nav-btn">
+                <FaPhoneAlt size="0.75rem" />
+              </button>
+            </a>
             <p className="nav-text">Contact The Developer</p>
           </div>
         </div>
