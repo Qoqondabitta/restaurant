@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "../components/navbar/Navbar";
 import Home from "../pages/Home";
-import Create from "../pages/Create";
+import Create from "../pages/create/Create";
 
 const Root = () => {
   return (

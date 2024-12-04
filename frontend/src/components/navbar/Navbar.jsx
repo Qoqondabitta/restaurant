@@ -1,11 +1,11 @@
 import React from "react";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className="main-common-style center">
+    <div className="main-common-style column-center">
       <div className="container-common-style row-center-between p-10-20">
         <Link to="/" className="logo-title center">
           XON STORE 🛒
@@ -29,6 +29,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <Outlet />
     </div>
   );
 };
