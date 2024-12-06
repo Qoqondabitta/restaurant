@@ -136,3 +136,25 @@
 .w-120{
   width: 120px;
 }
+
+/* margins */
+
+.mb-10{
+  margin-bottom: 10px;
+}
+
+.mb-20{
+  margin-bottom: 20px;
+}
+
+.mt-10{
+  margin-top: 10px;
+}
+
+.mt-20{
+  margin-top: 20px;
+}
+
+.mt-50{
+  margin-top: 50px;
+}
