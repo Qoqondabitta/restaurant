@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -18,6 +18,27 @@
 .container-common-style {
   max-width: 1200px;
   width: 100%;
+}
+
+.topup-tab {
+  position: absolute;
+  top: 0px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  max-width: 250px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.positive-tab {
+  background-color: rgb(60, 242, 60);
+}
+
+.negative-tab {
+  background-color: red;
 }
 
 .gap-5 {
@@ -117,44 +138,52 @@
   cursor: pointer;
 }
 
-.w-50{
+.w-50 {
   width: 50px;
 }
 
-.w-80{
+.w-80 {
   width: 80px;
 }
 
-.w-100{
+.w-100 {
   width: 100px;
 }
 
-.w-150{
+.w-150 {
   width: 150px;
 }
 
-.w-120{
+.w-120 {
   width: 120px;
 }
 
 /* margins */
 
-.mb-10{
+.mb-10 {
   margin-bottom: 10px;
 }
 
-.mb-20{
+.mb-20 {
   margin-bottom: 20px;
 }
 
-.mt-10{
+.mt-10 {
   margin-top: 10px;
 }
 
-.mt-20{
+.mt-20 {
   margin-top: 20px;
 }
 
-.mt-50{
+.mt-50 {
   margin-top: 50px;
+}
+
+.relative{
+  position: relative;
+}
+
+.absolute{
+  position: absolute;
 }
