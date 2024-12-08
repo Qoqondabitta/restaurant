@@ -72,7 +72,7 @@ const Create = () => {
           </div>
           <button
             onClick={handleAddProduct}
-            className="button-common-style add-btn"
+            className="button-common-style w-full add-btn bg-add-btn white"
           >
             {/* <Link style={{ textDecoration: "none", color: "white" }} to="/"> */}
             Add

@@ -195,3 +195,26 @@
 .overflow-hidden {
   overflow: hidden;
 }
+
+
+/* ========================================= */
+
+.product-bg{
+  background-color: rgb(5, 5, 44);
+}
+
+.white{
+  color: white;
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.bg-grey{
+  background-color: rgb(182, 179, 179);
+}
+
+.bg-add-btn{
+  background-color: blueviolet;
+}

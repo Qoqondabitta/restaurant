@@ -25,8 +25,34 @@ export const addProductToStore = create((set) => ({
     const res = await fetch("/api/products");
     const data = await res.json();
     set({ products: data.data });
-    },
-    deleteProduct: async (id) => {
-      
-  }
+  },
+  deleteProduct: async (id) => {
+    const res = await fetch(`/api/products/${id}`, {
+      method: "DELETE",
+    });
+    const data = await res.json();
+    if (!data.success) return { success: false, message: data.message };
+    set((state) => ({
+      products: state.products.filter((product) => product._id != id),
+    }));
+    return { success: true, message: "Product has succesfully been deleted" };
+  },
+  editProduct: async (id, changedProduct) => {
+    const res = await fetch(`/api/products/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(changedProduct),
+    });
+    const data = await res.json();
+    if (!data.success) return { success: false, message: data.message };
+
+    set((state) => ({
+      products: state.products.map((product) =>
+        product._id == id ? data.data : product
+      ),
+    }));
+    return { success: true, message: "Product has succesfully been updated" };
+  },
 }));

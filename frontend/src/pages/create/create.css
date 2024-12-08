@@ -14,10 +14,10 @@
 .add-btn{
   border: none;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   height: 35px;
-  background-color: blueviolet;
-  color: white;
+  /* background-color: blueviolet; */
+  /* color: white; */
 }
 
 .form-group input {
