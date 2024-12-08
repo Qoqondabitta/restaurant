@@ -63,7 +63,7 @@
 
 .p-10 {
   padding: 10px;
-}
+} 
 
 .p-5-10 {
   padding: 5px 10px;
@@ -138,6 +138,10 @@
   cursor: pointer;
 }
 
+.w-full{
+  width: 100%;
+}
+
 .w-50 {
   width: 50px;
 }
@@ -186,4 +190,8 @@
 
 .absolute{
   position: absolute;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }

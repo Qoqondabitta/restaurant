@@ -21,4 +21,12 @@ export const addProductToStore = create((set) => ({
       message: "New Product has been added Alhamdulillah",
     };
   },
+  mapProducts: async () => {
+    const res = await fetch("/api/products");
+    const data = await res.json();
+    set({ products: data.data });
+    },
+    deleteProduct: async (id) => {
+      
+  }
 }));
