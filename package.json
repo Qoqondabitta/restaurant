@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "NODE_ENV=development nodemon backend/index.js",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "node backend/index.js"
+    "start": "NODE_ENV=production node backend/index.js"
   },
   "type": "module",
   "keywords": [],
