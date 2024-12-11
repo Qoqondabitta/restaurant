@@ -15,7 +15,7 @@ const Signin = () => {
   return (
     <div className="main-common-style center">
       <div className="container-common-style column-center gap-20">
-        <h1 className="logo-title mt-50">Current Products 👜</h1>
+        <h1 className="logo-title mt-50">Cars on Sale 👜</h1>
         {products.length == 0 && (
           <p className="center mt-10 gap-20">
             No Products Found 😢

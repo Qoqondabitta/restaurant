@@ -9,10 +9,10 @@ const Root = () => {
   return (
     <Routes>
       <Route element={<Navbar />}>
+        <Route path="/" element={<Create />} />
         <Route path="/home" element={<Home />} />
         <Route path="/create" element={<Create />} />
       </Route>
-      <Route path="/" element={<Signin />} />
       <Route to="*" element={<h1>404 Page Not Found</h1>} />
     </Routes>
   );
