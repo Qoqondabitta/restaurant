@@ -8,11 +8,11 @@ import Signin from "../pages/signin/Signin";
 const Root = () => {
   return (
     <Routes>
-      <Route element={<Navbar />}>
-        <Route path="/" element={<Create />} />
-        <Route path="/home" element={<Home />} />
+      {/* <Route element={<Navbar />}> */}
+        <Route path="/" exact element={<Signin />} />
+        <Route path="/home" element={<Signin />} />
         <Route path="/create" element={<Create />} />
-      </Route>
+      {/* </Route> */}
       <Route to="*" element={<h1>404 Page Not Found</h1>} />
     </Routes>
   );

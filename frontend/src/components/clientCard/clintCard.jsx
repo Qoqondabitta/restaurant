@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./card.css";
+import "./clientCard.css";
 import { addProductToStore } from "../../redux/add";
 import "../../pages/create/create.css";
 
