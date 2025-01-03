@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./clientCard.css";
 import { addProductToStore } from "../../redux/add";
 import "../../pages/create/create.css";
+import { Link } from "react-router-dom";
 
 const ClientProductCard = ({ product }) => {
   const [changedProduct, setChangedProduct] = useState(product);
@@ -14,15 +15,21 @@ const ClientProductCard = ({ product }) => {
     const { success, message } = await editProduct(id, changedProduct);
   };
   return (
-    <div className="column-center overflow-hidden card-box-style">
+    <div className="column-center overflow-hidden card-box-style car-card">
       {/* {show && (
         
       )} */}
-      <img
-        src={product.image}
-        alt={product.name}
+      <Link
+        style={{ textDecoration: "none" }}
         className="card-image-style"
-      />
+        to={`/car/${product._id}`}
+      >
+        <img
+          src={product.image}
+          alt={product.name}
+          className="card-image-style pointer"
+        />
+      </Link>
       <div className="column-start white product-bg gap-10 w-full p-10-20">
         <h3>{product.name}</h3>
         <h3>{product.price}$</h3>

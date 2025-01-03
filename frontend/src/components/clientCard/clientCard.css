@@ -1,0 +1,7 @@
+.car-card {
+    transition: all 0.1s linear;
+}
+
+.car-card:hover{
+    transform: scale(1.1);
+}

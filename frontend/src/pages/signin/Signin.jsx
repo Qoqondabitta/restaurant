@@ -13,8 +13,8 @@ const Signin = () => {
   }, [mapProducts]);
   console.log(products, " - products");
   return (
-    <div className="main-common-style center">
-      <div className="container-common-style column-center gap-20">
+    <div className="main-common-style center mb-20">
+      <div className="container-common-style column-center gap-20 mb-20">
         <h1 className="logo-title mt-50">Cars on Sale 👜</h1>
         {products.length == 0 && (
           <p className="center mt-10 gap-20">
@@ -22,9 +22,9 @@ const Signin = () => {
             <Link to="/create">Let's Create Some</Link>
           </p>
         )}
-        <div className="center box-wrap gap-20 mt-50">
+        <div className="center box-wrap gap-20 mt-20">
           {products.map((v, i) => (
-            <ClientProductCard key={i} product={v} />
+            <ClientProductCard key={i} product={v} className="car-card" />
           ))}
         </div>
       </div>
