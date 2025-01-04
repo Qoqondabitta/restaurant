@@ -30,7 +30,7 @@ const ClientProductCard = ({ product }) => {
           className="card-image-style pointer"
         />
       </Link>
-      <div className="column-start white product-bg gap-10 w-full p-10-20">
+      <div className="column-start white-text product-bg gap-10 w-full p-10-20">
         <h3>{product.name}</h3>
         <h3>{product.price}$</h3>
         <div className="center gap-10">

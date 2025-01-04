@@ -3,6 +3,10 @@
   height: 60px;
 }
 
+#active-box{
+  transform: scale(1.25);
+}
+
 #active:hover {
   transform: scale(0.75);
 }
@@ -26,9 +30,10 @@
 
 .characteristics-box{
   border-left: 1px solid black;
-  padding: 10px 20px;
-  background-color: rgb(236, 233, 233);
-  border-radius: 5px;
+  padding: 0px 20px;
+  
+  /* background-color: rgb(236, 233, 233); */
+  /* border-radius: 5px; */
 }
 
 .left-car-info {
@@ -77,8 +82,8 @@
 }
 
 .color-box {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   border-radius: 5px;
   margin-right: 40px;
@@ -89,7 +94,7 @@
   transform: scale(0.8);
 }
 
-.white-box {
+.white {
   background-color: white;
   border: 1px solid black;
 }
