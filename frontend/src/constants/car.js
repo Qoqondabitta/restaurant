@@ -38,7 +38,7 @@ export const carImageSlider = [
 ];
 
 export const colors = [
-    {availableColor: "white"},
+    {availableColor: "white-box"},
     {availableColor: "black"},
     {availableColor: "grey"},
     {availableColor: "red"}

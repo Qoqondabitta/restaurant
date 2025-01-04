@@ -24,6 +24,13 @@
   text-align: center;
 }
 
+.characteristics-box{
+  border-left: 1px solid black;
+  padding: 10px 20px;
+  background-color: rgb(236, 233, 233);
+  border-radius: 5px;
+}
+
 .left-car-info {
   gap: 20px;
 }
@@ -75,9 +82,14 @@
   cursor: pointer;
   border-radius: 5px;
   margin-right: 40px;
+  transition: all 0.1s linear;
 }
 
-.white {
+.color-box:hover{
+  transform: scale(0.8);
+}
+
+.white-box {
   background-color: white;
   border: 1px solid black;
 }

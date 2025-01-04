@@ -12,7 +12,7 @@ const Car = () => {
   return (
     <div className="main-common-style column-center mt-20">
       <h1 className="car-name mb-20">Chevrolet Traverse 2027</h1>
-      <div className="container-common-style center gap-50 mt-20">
+      <div className="container-common-style center gap-20 mt-20">
         <div className="column-center left-car-info mb-20">
           <div className="center gap-20">
             <div className="column-center gap-20">
@@ -42,7 +42,7 @@ const Car = () => {
             ))}
           </div>
         </div>
-        <div className="column-start bg-grey left-car-info gap-10 mb-20">
+        <div className="column-start characteristics-box left-car-info gap-10 mb-20">
           {carCharacteristics.map((v, i) => (
             <div className="center gap-10" key={i}>
               <p className="car-charasterictics bold">{v.termin}:</p>
