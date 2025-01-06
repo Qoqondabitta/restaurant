@@ -20,9 +20,9 @@ const Car = () => {
             <div className="column-center gap-20">
               {advancedCarSlide[0].colors.map((v, i) => (
                 <div
-                  id={v.availableColor === color && "active-box"}
-                  className={`${v.availableColor} color-box`}
-                  onClick={() => setColor(v.availableColor)}
+                  id={v === color && "active-box"}
+                  className={`${v} color-box`}
+                  onClick={() => setColor(v)}
                   key={i}
                 ></div>
               ))}

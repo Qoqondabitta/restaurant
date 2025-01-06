@@ -44,10 +44,10 @@ export const advancedCarSlide = [
     image:
       "https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/e5bf7ee6-5f91-404c-86f5-cc44dcb7a174/f282f5ae-9881-41ae-9ccb-f467febb7dc4.png",
     colors: [
-      { availableColor: "white" },
-      { availableColor: "black" },
-      { availableColor: "grey" },
-      { availableColor: "red" },
+      "white",
+      "black",
+      "grey",
+      "red",
     ],
     carImageSlider: [
       {

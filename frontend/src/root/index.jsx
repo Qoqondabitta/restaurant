@@ -13,6 +13,7 @@ const Root = () => {
       <Route path="/" exact element={<Signin />} />
       <Route path="/home" element={<Signin />} />
       <Route path="/create" element={<Create />} />
+      <Route path="/edit" element={<Home />} />
       <Route path="/car/:id" element={<Car />} />
       {/* </Route> */}
       <Route to="*" element={<h1>404 Page Not Found</h1>} />

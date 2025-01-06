@@ -45,6 +45,10 @@ body{
   background-color: red;
 }
 
+.wrap{
+  flex-wrap: wrap;
+}
+
 .gap-5 {
   gap: 5px;
 }

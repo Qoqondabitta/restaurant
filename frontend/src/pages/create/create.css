@@ -1,4 +1,4 @@
-.form-style{
+.form-style {
   max-width: 450px;
   width: 100%;
   padding: 40px;
@@ -11,7 +11,7 @@
   width: 100%;
 }
 
-.add-btn{
+.add-btn {
   border: none;
   text-align: center;
   /* width: 100%; */
@@ -47,4 +47,48 @@
   padding: 3px;
   font-size: 14px;
   background-color: white;
+}
+
+.add-color-input {
+  padding: 5px 10px;
+  max-width: 150px;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid grey;
+  outline: nonr;
+}
+
+.add-color-input::placeholder{
+  color: black;
+  font-weight: bold;
+}
+
+.add-color-button {
+  background-color: black;
+  color: white;
+  max-width: 60px;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid black;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.car-position-input{
+  max-width: 170px;
+  width: 100%;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+}
+
+.car-position-input::placeholder{
+  color: black;
+  font-weight: bold;
 }

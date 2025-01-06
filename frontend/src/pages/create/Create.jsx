@@ -1,16 +1,35 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./create.css";
 import { Link } from "react-router-dom";
 import { addProductToStore } from "../../redux/add";
+import { createCarInput, createColors } from "../../constants/create";
 
 const Create = () => {
+  const [check, SetCheck] = useState({});
   const [tab, setTab] = useState(false);
   const [title, setTitle] = useState("");
   const [color, setColor] = useState("");
+  const [colour, setColour] = useState("");
+  const [lights, setLights] = useState(createColors);
+  const handleCheckbox = (color) => {
+    SetCheck((prev) => ({ ...prev, [color]: !prev[color] }));
+    check[color]&&setNewProduct({...newProduct, colors: })
+  };
+  const handlecolors = () => {
+    setLights(lights.push(colour));
+    let b = lights.filter((v, i) => i != i + 1);
+    return setLights(b);
+  };
+  // const handleColorAvailable = () => {
+  //   Object.values(check, "check")
+  // }
+
+  console.log(Object(check));
   const [newProduct, setNewProduct] = useState({
     name: "",
     price: "",
     image: "",
+    colors: []
   });
   const { addProduct } = addProductToStore();
   const handleAddProduct = async () => {
@@ -24,7 +43,7 @@ const Create = () => {
     }, 0);
     setNewProduct({ name: "", price: "", image: "" });
   };
-  console.log(newProduct);
+  // console.log(newProduct);
   return (
     <div className="main-common-style center" onClick={() => setTab(false)}>
       <div
@@ -36,7 +55,7 @@ const Create = () => {
           className="column-center mt-50 form-style gap-20"
           onClick={() => setTab(false)}
         >
-          <h2 className="mb-20">Create New Product</h2>
+          <h2 className="mb-20">Add New Car to the Market</h2>
           <div className="form-group column-center">
             <input
               name="name"
@@ -70,6 +89,48 @@ const Create = () => {
             />
             <label>Drop Image for Product</label>
           </div>
+
+          {/* ---COLOR--- */}
+          <div className="row-start gap-20 wrap">
+            {lights.map((v, i) => (
+              <div className="column-start gap-10" key={i}>
+                <label className="bold">
+                  <input
+                    onChange={() => handleCheckbox(v)}
+                    type="checkbox"
+                    style={{ marginRight: "5px" }}
+                    className="pointer"
+                    checked={!!check[color]}
+                  />
+                  {v}
+                </label>
+                {check[v] && (
+                  <div className="row-start wrap gap-20">
+                    {createCarInput.map((c, ind) => (
+                      <input
+                        key={ind}
+                        className="car-position-input"
+                        placeholder={`${c}${v} Car`}
+                      />
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+            <div className="center">
+              <input
+                onChange={(e) => setColour(e.target.value)}
+                className="add-color-input"
+                placeholder="Type Color"
+              />
+              <button onClick={handlecolors} className="add-color-button">
+                Add
+              </button>
+            </div>
+          </div>
+          {/* ---COLOR--- */}
+
+          {/* ------BUTTON---- */}
           <button
             onClick={handleAddProduct}
             className="button-common-style w-full add-btn bg-add-btn white"
@@ -78,6 +139,7 @@ const Create = () => {
             Add
             {/* </Link> */}
           </button>
+          {/* ------BUTTON---- */}
         </div>
       </div>
     </div>
